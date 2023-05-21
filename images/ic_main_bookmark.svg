@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_2313" data-name="사각형 2313" width="34" height="34" transform="translate(77 136)" fill="#ffe8e8"/>
+    </clipPath>
+  </defs>
+  <g id="마스크_그룹_104" data-name="마스크 그룹 104" transform="translate(-77 -136)" clip-path="url(#clip-path)">
+    <g id="그룹_2453" data-name="그룹 2453" transform="translate(-6532.929 -1837.421)">
+      <g id="그룹_2452" data-name="그룹 2452" transform="translate(-5.622 3)">
+        <g id="그룹_2451" data-name="그룹 2451" transform="translate(6619.551 1975.421)">
+          <path id="패스_12166" data-name="패스 12166" d="M539.34,356.261a1.266,1.266,0,0,0-1.021-.861l-7.4-1.075-3.31-6.709a1.266,1.266,0,0,0-2.271,0l-3.312,6.709-7.4,1.075a1.266,1.266,0,0,0-.7,2.16l5.357,5.222-1.264,7.374a1.266,1.266,0,0,0,1.836,1.335l6.622-3.481,6.623,3.481a1.265,1.265,0,0,0,1.836-1.335l-1.264-7.374,5.358-5.222A1.264,1.264,0,0,0,539.34,356.261Z" transform="translate(-513.534 -346.91)" fill="none" stroke="#38383b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        </g>
+        <ellipse id="타원_426" data-name="타원 426" cx="4.816" cy="4.816" rx="4.816" ry="4.816" transform="translate(6636.274 1986.272)" fill="#f8c750"/>
+        <path id="패스_12167" data-name="패스 12167" d="M538.583,363.019h-1.341v-1.341a.7.7,0,0,0-1.409,0v1.341h-1.341a.7.7,0,0,0,0,1.409h1.341v1.341a.7.7,0,0,0,1.409,0v-1.341h1.341a.7.7,0,0,0,0-1.409Z" transform="translate(6104.553 1627.495)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

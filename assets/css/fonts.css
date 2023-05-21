@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'NanumSquare';
+    src: local(NanumSquare),
+        local(NanumSquare_0),
+        local(NanumSquare_acR),
+        local(NanumSquare_acL),
+        url('../fonts/NanumSquare_0.ttf') format('truetype'),
+        url('../fonts/NanumSquare.ttf') format('truetype'),
+        url('../fonts/NanumSquare_acR.ttf') format('truetype'),
+        url('../fonts/NanumSquare_acL.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 100;
+    src: url('../fonts/NanumSquare_acL.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 400;
+    src: url('../fonts/NanumSquare_acR.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 700;
+    src: url('../fonts/NanumSquare.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 900;
+    src: url('../fonts/NanumSquare_0.ttf') format('truetype');
+}
+
+/* Spoqa */
+
+@font-face {
+    font-family: 'SpoqaHanSans';
+    src:
+    local(Spoqa Han Sans Regular),
+    local(Spoqa Han Sans Bold),
+    url('../fonts/Spoqa Han Sans Regular.woff2') format('truetype'),
+    url('../fonts/Spoqa Han Sans Bold.woff2') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SpoqaHanSans';
+    font-weight: 400;
+    src: url('../fonts/Spoqa Han Sans Regular.woff2') format('truetype');
+}
+
+@font-face {
+    font-family: 'SpoqaHanSans';
+    font-weight: 700;
+    src: url('../fonts/Spoqa Han Sans Bold.woff2') format('truetype');
+}
+
+@font-face {
+    font-family: 'SebangGothic';
+    src:
+            local(SEBANG Gothic),
+            local(SEBANG Gothic Bold),
+            url('../fonts/SEBANG Gothic.ttf') format('truetype'),
+            url('../fonts/SEBANG Gothic Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SebangGothic';
+    font-weight: 400;
+    src: url('../fonts/SEBANG Gothic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SebangGothic';
+    font-weight: 700;
+    src: url('../fonts/SEBANG Gothic Bold.ttf') format('truetype');
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="11" viewBox="0 0 11 11">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_2605" data-name="사각형 2605" width="11" height="11" transform="translate(8137 1717)" fill="#b76666"/>
+    </clipPath>
+  </defs>
+  <g id="마스크_그룹_208" data-name="마스크 그룹 208" transform="translate(-8137 -1717)" clip-path="url(#clip-path)">
+    <g id="그룹_2984" data-name="그룹 2984" transform="translate(0.272 0.288)">
+      <line id="선_487" data-name="선 487" y2="8.563" transform="translate(8145.635 1717.93)" fill="none" stroke="#f8c750" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+      <ellipse id="타원_481" data-name="타원 481" cx="0.83" cy="0.83" rx="0.83" ry="0.83" transform="translate(8144.806 1720.029)" fill="#fff" stroke="#f8c750" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+      <line id="선_488" data-name="선 488" y2="8.563" transform="translate(8142.228 1717.93)" fill="none" stroke="#f8c750" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+      <ellipse id="타원_482" data-name="타원 482" cx="0.83" cy="0.83" rx="0.83" ry="0.83" transform="translate(8141.397 1722.86)" fill="#fff" stroke="#f8c750" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+      <line id="선_489" data-name="선 489" y2="8.563" transform="translate(8138.82 1717.93)" fill="none" stroke="#f8c750" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+      <ellipse id="타원_483" data-name="타원 483" cx="0.83" cy="0.83" rx="0.83" ry="0.83" transform="translate(8137.99 1720.141)" fill="#fff" stroke="#f8c750" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+    </g>
+  </g>
+</svg>
