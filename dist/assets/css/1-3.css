@@ -128,13 +128,41 @@
     line-height: 12px;
     color: #83888B;    
 }
-.sh_binfo {
-
+.sh_binfo .inner {
+    padding: 8px 20px 6px 20px;
 }
-.sh_binfo {
-
+.sh_binfo .inner .label_text {
+    font-size: 12px;
+    line-height: 13px;
+    color: #393939;
 }
-.sh_binfo {
+.sh_binfo .inner .label_text.full {
+    display: block;
+    padding-top: 20px;
+}
+.sh_binfo .inner .sh_binfo_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #E1E4E6;
+}
+.sh_binfo .inner .sh_binfo_flex .ltext {
+    flex: none;
+    width: 62px;
+}
+.sh_binfo .inner .sh_binfo_flex .cont {
+    flex: 1 1 0;
+}
+.sh_binfo .inner .sh_binfo_flex .cont.stype {
+    display: flex;
+    gap: 7px;
+}
+.sh_binfo .inner .sh_binfo_flex .cont.stype .sh_selectbox {
+        
+}
+.sh_binfo .inner .sh_binfo_flex .cont {
+
 
 }
 .sh_binfo .btn_area {

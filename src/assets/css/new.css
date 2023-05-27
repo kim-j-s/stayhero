@@ -91,7 +91,24 @@
     
 }
 .sh_input .inp {
-
+    display: block;
+    width: 100%;
+    height: 34px !important;
+    margin: 0 !important;
+    font-size: 16px;
+    line-height: 18px;
+    color: #393939;
+    border: 1px solid #fff !important;
+    border-bottom: 1px solid #E1E4E6 !important;
+    box-sizing: border-box !important;
+}
+.sh_input .inp:focus {
+    margin: 0 !important;
+    padding: 0 !important;
+    outline: none;
+    box-shadow: none !important;
+}
+.sh_input {
 }
 .sh_input {
 
@@ -99,10 +116,36 @@
 .sh_input {
 
 }
-.sh_input {
+
+
+
+
+
+
+/* select */
+.sh_selectbox {
+    
+}
+.sh_selectbox select {
+    display: block;
+    height: 24px;
+    padding: 0 24px 0 10px;
+    font-size: 12px;
+    -webkit-appearance: none;
+    border: 1px solid #E1E4E6;
+    box-sizing: border-box;
+    background: url(/images/icon_down_ty2.png) no-repeat right 8px center / 10px auto;
 
 }
+.sh_selectbox {
 
+}
+.sh_selectbox {
 
+}
+.sh_selectbox {
 
+}
+.sh_selectbox {
 
+}
