@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="11" viewBox="0 0 11 11">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_2277" data-name="사각형 2277" width="11" height="11" transform="translate(8118 1720)" fill="#b76666"/>
+    </clipPath>
+  </defs>
+  <g id="마스크_그룹_207" data-name="마스크 그룹 207" transform="translate(-8118 -1720)" clip-path="url(#clip-path)">
+    <g id="그룹_2006" data-name="그룹 2006" transform="translate(8119.345 1721)">
+      <path id="패스_11839" data-name="패스 11839" d="M273.719,206.018l1.778-.291v7.031l-2.045.528-2.157-.528-2.064.528-2.045-.528v-7.031l1.778.291" transform="translate(-267.186 -204.197)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+      <g id="그룹_2005" data-name="그룹 2005" transform="translate(2.353)">
+        <path id="패스_11840" data-name="패스 11840" d="M273.883,205.806c0,1.154-1.8,3.447-1.8,3.447s-1.8-2.293-1.8-3.447.53-2.09,1.8-2.09C273.422,203.716,273.883,204.652,273.883,205.806Z" transform="translate(-270.279 -203.716)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+      </g>
+      <circle id="타원_368" data-name="타원 368" cx="0.846" cy="0.846" r="0.846" transform="translate(3.309 1.076)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+    </g>
+  </g>
+</svg>

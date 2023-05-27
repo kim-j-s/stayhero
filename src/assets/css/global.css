@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+
+
+/***** 메뉴네비게이션 *****/
+.menu_nav_wrap {position: relative;box-sizing:border-box;padding:0 10px; margin-top:64px; border-bottom:2px #ddd solid;}
+.menu_nav_wrap .menu_nav2{max-width:1000px;height:70px; display: block;margin: auto;box-sizing:border-box;padding:5px 0 0 0;overflow: hidden;  }
+.menu_nav_wrap .menu_nav2 .swiper-wrapper{box-sizing:border-box;left:0;position: relative; }
+.menu_nav_wrap .menu_nav2 span{line-height: 50px;padding:0 10px 5px 10px; position: relative;}
+.menu_nav_wrap .menu_nav2 span button{color:#131313; font-size:18px;  height:100%; white-space:nowrap; }
+.menu_nav_wrap .menu_nav2 span.on button{color:#d0112b; font-weight:600; position:relative; }
+.menu_nav_wrap .menu_nav2 span:before{content: ""; position: absolute; left: 51%; right: 51%; bottom: -6px; background:#d0112b; height: 4px;
+-webkit-transition-property: left, right;
+transition-property: left, right;
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+-webkit-transition-timing-function: ease-out;
+transition-timing-function: ease-out;}
+.menu_nav_wrap .menu_nav2 span.on:before{left:0;right:0; }
+.menu_nav_wrap .menu_nav2 .owl-dots{display: none;}
+.menu_nav_wrap .menu_nav:after{content:'';display: block;clear:both;}
+.menu_nav_wrap span{display: block;padding:0 15px;font-size:28px;float:left;}
+.menu_wrap .menu_list{box-sizing: border-box;padding:0 20px;max-width:750px;margin: auto;}
+.menu_wrap .menu_list li{position: relative;border-top:0; padding:30px 0;box-sizing: border-box;}
+.menu_wrap .menu_list li:first-child{border-top:0;}
+.menu_wrap .menu_list li > a{position: relative;display: block;width:100%;box-sizing: border-box;padding-left:50%;min-height:200px;  }
+.menu_wrap .menu_list li a em{width:48%;height:100%;position: absolute;left:0;top:0;overflow: hidden;}
+.menu_wrap .menu_list li a em img{position: relative;width:100%;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);max-width:220px;}
+.menu_wrap .menu_list li a strong{font-size: 15px;color:#000;text-align: center;display: block;padding-top:50px;}
+
+

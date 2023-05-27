@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Html List</title>
+    <style>
+        .p-c1 {
+            color: gold !important;
+            letter-spacing: 2px;
+        }
+
+        .p-c2 {
+            color: greenyellow !important;
+            letter-spacing: 2px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+        }
+
+        header {
+            position: fixed;
+            left: 0;
+            top: 0;
+            box-sizing: border-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+            background: #000;
+            color: #fff;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 20px;
+            line-height: 26px;
+        }
+
+        header .control-list {
+            font-size: 0;
+            margin-left: 10px;
+        }
+
+        header .control-list button {
+            margin-left: 5px;
+            font-size: 10px;
+        }
+
+        .main {
+            margin: 60px 10px 10px;
+        }
+
+        .main h2 {
+            font-size: 18px;
+            line-height: 22px;
+            cursor: pointer;
+        }
+
+        .main h2::before {
+            content: '-';
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            width: 16px;
+            height: 16px;
+            line-height: 14px;
+            border-radius: 8px;
+            background-color: #000;
+            color: #fff;
+            margin: 4px 5px 0 0;
+        }
+
+        .main h2.on::before {
+            content: '+';
+        }
+
+        .main h2.on+table {
+            display: none;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+            word-break: break-all;
+        }
+
+        tr {
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+        }
+
+        th,
+        td {
+            padding: 5px 10px;
+            border-left: 1px solid #000;
+            border-right: 1px solid #000;
+            font-size: 12px;
+        }
+
+        th {
+            color: #fff;
+            background: #666;
+        }
+
+        th:first-child {
+            border-left: 1px solid #000;
+        }
+
+        th:last-child {
+            border-right: 1px solid #000;
+        }
+        td.sort {
+            text-align: center;
+        }
+        td.sort.n {
+            color: red;
+        }
+
+        colgroup .complete {
+            width: 90px;
+        }
+
+        colgroup .level {
+            width: 12%;
+        }
+
+        .complete {
+            text-align: center;
+        }
+
+        tbody tr:nth-child(2n) {
+            background: #eee;
+        }
+
+        .title {
+            display: table-row !important;
+            cursor: pointer;
+        }
+
+        .title th {
+            text-align: left;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 1px;
+            background: #000;
+            text-decoration: underline;
+            padding: 8px 10px;
+            border-top: 3px solid #888;
+        }
+
+        colgroup+thead .title th {
+            border-top: 0;
+        }
+
+        .title th::before {
+            content: '';
+            display: inline-block;
+            vertical-align: top;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 0;
+            border-bottom: 8px solid #fff;
+            margin: 7px 10px 0 0;
+        }
+
+        .mini tr,
+        .mini+tbody {
+            display: none;
+        }
+
+        .mini .title th::before {
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 8px solid #fff;
+            border-bottom: 0;
+        }
+
+        .m-list {
+            position: relative;
+            margin: 0;
+            padding: 24px 0 0 0;
+        }
+
+        .m-list::before {
+            content: '수정일자';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            color: red;
+        }
+
+        .m-list li {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            padding-left: 12px;
+            list-style: none;
+        }
+
+        .m-list li::before {
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: 0;
+            width: 5px;
+            border-bottom: 5px solid #000;
+            border-radius: 50%;
+            box-sizing: border-box;
+        }
+
+        .m-list li+li {
+            margin-top: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <header>
+            <h1>Html List</h1>
+            <div class="control-list">
+                <button class="close">-</button>
+                <button class="open">+</button>
+            </div>
+            <script>
+                document.querySelector('.control-list .close').onclick = function() {
+                    var el = document.querySelectorAll('.title');
+                    var len = el.length;
+                    if (len > 0) {
+                        for (var i = 0; i < len; i++) el[i].parentElement.classList.add('mini');
+                    }
+                };
+
+                document.querySelector('.control-list .open').onclick = function() {
+                    var el = document.querySelectorAll('.mini');
+                    var len = el.length;
+                    if (len > 0) {
+                        for (var i = 0; i < len; i++) el[i].classList.remove('mini');
+                    }
+                };
+            </script>
+        </header>
+        <!-- // header -->
+
+        <div class="main">
+            <!-- table -->
+            <table>
+                <colgroup>
+                    <col class="level" style="width: 20%;">
+                    <col class="level" style="width: 20%;">
+                    <col class="link">
+                    <col class="sort" style="width: 90px;">
+                    <col class="complete">
+                    <col class="note">
+                </colgroup>
+
+                <!-- html -->
+                <thead>
+                    <tr class="title" onclick="this.parentElement.classList.toggle('mini');">
+                        <th colspan="6">수정페이지 <span class="p-c1">[page]</span></th>
+                    </tr>
+                    <tr>
+                        <th>lv[1]</th>
+                        <th>lv[2]</th>
+                        <th>기준</th>
+                        <th>link</th>
+                        <th>완료여부</th>
+                        <th>비고</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0-1</td>
+                        <td></td>
+                        <td class="link"><a href="html/0-1.html" target="_blank">0-1</a></td>
+                        <td class="sort">수정</td>
+                        <td class="complete"></td>
+                        <td class="note">
+                            <ul class="m-list">
+                                <li>2023-05-21</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td></td>
+                        <td class="link"><a href="html/1.html" target="_blank">1</a></td>
+                        <td class="sort">수정</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>1-1_메인(즐겨찾기 팝업)</td>
+                        <td></td>
+                        <td class="link"><a href="html/1-1_메인(즐겨찾기 팝업).html" target="_blank">1-1_메인(즐겨찾기 팝업)</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>1-2</td>
+                        <td></td>
+                        <td class="link"><a href="html/1-2.html" target="_blank">1-2</a></td>
+                        <td class="sort">수정</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>1-2-1</td>
+                        <td></td>
+                        <td class="link"><a href="html/1-2-1.html" target="_blank">1-2-1</a></td>
+                        <td class="sort">수정</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>1-2-2_검색(인원 선택)</td>
+                        <td></td>
+                        <td class="link"><a href="html/1-2-2_검색(인원 선택).html" target="_blank">1-2-2_검색(인원 선택)</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>1-3</td>
+                        <td></td>
+                        <td class="link"><a href="html/1-3.html" target="_blank">1-3</a></td>
+                        <td class="sort">수정</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>1-3-1</td>
+                        <td></td>
+                        <td class="link"><a href="html/1-3-1.html" target="_blank">1-3-1</a></td>
+                        <td class="sort">수정</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>1-3-1-1_닉네임 변경</td>
+                        <td></td>
+                        <td class="link"><a href="html/1-3-1-1_닉네임 변경.html" target="_blank">1-3-1-1_닉네임 변경</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>1-3-1-2_비밀번호 변경</td>
+                        <td></td>
+                        <td class="link"><a href="html/1-3-1-2_비밀번호 변경.html" target="_blank">1-3-1-2_비밀번호 변경</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>1-3-1-1-setting</td>
+                        <td></td>
+                        <td class="link"><a href="html/1-3-1-1-setting.html" target="_blank">1-3-1-1-setting</a></td>
+                        <td class="sort">수정</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>1-3-1-1-setting-alarm</td>
+                        <td></td>
+                        <td class="link"><a href="html/1-3-1-1-setting-alarm.html" target="_blank">1-3-1-1-setting-alarm</a></td>
+                        <td class="sort">수정</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>회원 탈퇴(탈퇴 사유)</td>
+                        <td></td>
+                        <td class="link"><a href="html/회원 탈퇴(탈퇴 사유).html" target="_blank">회원 탈퇴(탈퇴 사유)</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>회원탈퇴(확인)</td>
+                        <td></td>
+                        <td class="link"><a href="html/회원탈퇴(확인).html" target="_blank">회원탈퇴(확인)</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>회원탈퇴(탈퇴 동의)</td>
+                        <td></td>
+                        <td class="link"><a href="html/회원탈퇴(탈퇴 동의).html" target="_blank">회원탈퇴(탈퇴 동의)</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>회원탈퇴(완료)</td>
+                        <td></td>
+                        <td class="link"><a href="html/회원탈퇴(완료).html" target="_blank">회원탈퇴(완료)</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>1-3-2-1</td>
+                        <td></td>
+                        <td class="link"><a href="html/1-3-2-1.html" target="_blank">1-3-2-1</a></td>
+                        <td class="sort">수정</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>1-3-2-1-1</td>
+                        <td></td>
+                        <td class="link"><a href="html/1-3-2-1-1.html" target="_blank">1-3-2-1-1</a></td>
+                        <td class="sort">수정</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>1-3-2-1-5</td>
+                        <td></td>
+                        <td class="link"><a href="html/1-3-2-1-5.html" target="_blank">1-3-2-1-5</a></td>
+                        <td class="sort">수정</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>1-3-2-1-6</td>
+                        <td></td>
+                        <td class="link"><a href="html/1-3-2-1-6.html" target="_blank">1-3-2-1-6</a></td>
+                        <td class="sort">수정</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>1-3-2-2-6</td>
+                        <td></td>
+                        <td class="link"><a href="html/1-3-2-2-6.html" target="_blank">1-3-2-2-6</a></td>
+                        <td class="sort">수정</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>1-3-3-1(1)</td>
+                        <td></td>
+                        <td class="link"><a href="html/1-3-3-1(1).html" target="_blank">1-3-3-1(1)</a></td>
+                        <td class="sort">수정</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>1-3-3-1</td>
+                        <td></td>
+                        <td class="link"><a href="html/1-3-3-1.html" target="_blank">1-3-3-1</a></td>
+                        <td class="sort">수정</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>내취향-사장님</td>
+                        <td></td>
+                        <td class="link"><a href="html/내취향-사장님.html" target="_blank">내취향-사장님</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>내취향-MBTI</td>
+                        <td></td>
+                        <td class="link"><a href="html/내취향-MBTI.html" target="_blank">내취향-MBTI</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>hotel-room-01</td>
+                        <td></td>
+                        <td class="link"><a href="html/hotel-room-01.html" target="_blank">hotel-room-01</a></td>
+                        <td class="sort">수정</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>hotel-room-02</td>
+                        <td></td>
+                        <td class="link"><a href="html/hotel-room-02.html" target="_blank">hotel-room-02</a></td>
+                        <td class="sort">수정</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>추가 1_로그인</td>
+                        <td></td>
+                        <td class="link"><a href="html/추가 1_로그인.html" target="_blank">추가 1_로그인</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>추가 1-1_이메일로 시작하기</td>
+                        <td></td>
+                        <td class="link"><a href="html/추가 1-1_이메일로 시작하기.html" target="_blank">추가 1-1_이메일로 시작하기</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>추가 1-1-1_회원가입(약관 동의)</td>
+                        <td></td>
+                        <td class="link"><a href="html/추가 1-1-1_회원가입(약관 동의).html" target="_blank">추가 1-1-1_회원가입(약관 동의)</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>추가 1-1-2_이메일 인증</td>
+                        <td></td>
+                        <td class="link"><a href="html/추가 1-1-2_이메일 인증.html" target="_blank">추가 1-1-2_이메일 인증</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>추가 1-1-3_이메일 인증(중복 확인-거절)</td>
+                        <td></td>
+                        <td class="link"><a href="html/추가 1-1-3_이메일 인증(중복 확인-거절).html" target="_blank">추가 1-1-3_이메일 인증(중복 확인-거절)</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>추가 1-1-3_이메일 인증(중복 확인-승인)</td>
+                        <td></td>
+                        <td class="link"><a href="html/추가 1-1-3_이메일 인증(중복 확인-승인).html" target="_blank">추가 1-1-3_이메일 인증(중복 확인-승인)</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>추가 1-1-4_이메일 인증(인증번호 발송)</td>
+                        <td></td>
+                        <td class="link"><a href="html/추가 1-1-4_이메일 인증(인증번호 발송).html" target="_blank">추가 1-1-4_이메일 인증(인증번호 발송)</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>추가 1-1-5_이메일 인증(인증번호 입력)</td>
+                        <td></td>
+                        <td class="link"><a href="html/추가 1-1-5_이메일 인증(인증번호 입력).html" target="_blank">추가 1-1-5_이메일 인증(인증번호 입력)</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>추가 1-1-6_인증번호 확인(성공)</td>
+                        <td></td>
+                        <td class="link"><a href="html/추가 1-1-6_인증번호 확인(성공).html" target="_blank">추가 1-1-6_인증번호 확인(성공)</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>추가 1-1-6_인증번호 확인(실패)</td>
+                        <td></td>
+                        <td class="link"><a href="html/추가 1-1-6_인증번호 확인(실패).html" target="_blank">추가 1-1-6_인증번호 확인(실패)</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>추가 1-1-7_개인정보 입력</td>
+                        <td></td>
+                        <td class="link"><a href="html/추가 1-1-7_개인정보 입력.html" target="_blank">추가 1-1-7_개인정보 입력</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>추가 1-1-8_회원가입(완료)</td>
+                        <td></td>
+                        <td class="link"><a href="html/추가 1-1-8_회원가입(완료).html" target="_blank">추가 1-1-8_회원가입(완료)</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>추가 1-2_비밀번호 찾기(인증방식 선택)</td>
+                        <td></td>
+                        <td class="link"><a href="html/추가 1-2_비밀번호 찾기(인증방식 선택).html" target="_blank">추가 1-2_비밀번호 찾기(인증방식 선택)</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>추가 1-2-1_휴대폰 인증(인증번호 발송)</td>
+                        <td></td>
+                        <td class="link"><a href="html/추가 1-2-1_휴대폰 인증(인증번호 발송).html" target="_blank">추가 1-2-1_휴대폰 인증(인증번호 발송)</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>추가 1-2-1-1_휴대폰 인증(인증번호 입력)</td>
+                        <td></td>
+                        <td class="link"><a href="html/추가 1-2-1-1_휴대폰 인증(인증번호 입력).html" target="_blank">추가 1-2-1-1_휴대폰 인증(인증번호 입력)</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>추가 1-2-1-2_휴대폰 인증(인증 성공)</td>
+                        <td></td>
+                        <td class="link"><a href="html/추가 1-2-1-2_휴대폰 인증(인증 성공).html" target="_blank">추가 1-2-1-2_휴대폰 인증(인증 성공)</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>추가 1-2-1-2_휴대폰 인증(인증 실패)</td>
+                        <td></td>
+                        <td class="link"><a href="html/추가 1-2-1-2_휴대폰 인증(인증 실패).html" target="_blank">추가 1-2-1-2_휴대폰 인증(인증 실패)</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>추가 1-2-2_이메일 인증(인증번호 발송)</td>
+                        <td></td>
+                        <td class="link"><a href="html/추가 1-2-2_이메일 인증(인증번호 발송).html" target="_blank">추가 1-2-2_이메일 인증(인증번호 발송)</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>추가 1-2-2-1_이메일 인증(인증번호 입력)</td>
+                        <td></td>
+                        <td class="link"><a href="html/추가 1-2-2-1_이메일 인증(인증번호 입력).html" target="_blank">추가 1-2-2-1_이메일 인증(인증번호 입력)</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>추가 1-2-2-2_이메일 인증(인증 성공)</td>
+                        <td></td>
+                        <td class="link"><a href="html/추가 1-2-2-2_이메일 인증(인증 성공).html" target="_blank">추가 1-2-2-2_이메일 인증(인증 성공)</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>추가 1-2-2-2_이메일 인증(인증 실패)</td>
+                        <td></td>
+                        <td class="link"><a href="html/추가 1-2-2-2_이메일 인증(인증 실패).html" target="_blank">추가 1-2-2-2_이메일 인증(인증 실패)</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>추가 1-2-3_임시 비밀번호 전송(이메일)</td>
+                        <td></td>
+                        <td class="link"><a href="html/추가 1-2-3_임시 비밀번호 전송(이메일).html" target="_blank">추가 1-2-3_임시 비밀번호 전송(이메일)</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td>추가 1-2-3_임시 비밀번호 전송(휴대폰)</td>
+                        <td></td>
+                        <td class="link"><a href="html/추가 1-2-3_임시 비밀번호 전송(휴대폰).html" target="_blank">추가 1-2-3_임시 비밀번호 전송(휴대폰)</a></td>
+                        <td class="sort n">신규</td>
+                        <td class="complete"></td>
+                        <td class="note"></td>
+                    </tr>
+                </tbody>
+                <!-- html -->
+
+            </table>
+            <!-- // table -->
+        </div>
+
+    </div>
+</body>
+
+</html>

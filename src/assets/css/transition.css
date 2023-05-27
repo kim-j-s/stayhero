@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/* transition-name: 'service' */
+.services-enter-active {
+  animation: slide-left-in .3s;
+}
+.services-leave-active {
+  animation: slide-right-out .3s;
+}
+
+/* service 에서 사용하는 애니메이션 정의 */
+@keyframes slide-left-in {
+  0% { transform: translateX(-20vw); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+@keyframes slide-right-out {
+  0% { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(20vw); opacity: 0; }
+}

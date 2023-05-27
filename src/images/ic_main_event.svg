@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_2194" data-name="사각형 2194" width="34" height="34" transform="translate(158 161)" fill="#ffe8e8"/>
+    </clipPath>
+  </defs>
+  <g id="마스크_그룹_38" data-name="마스크 그룹 38" transform="translate(-158 -161)" clip-path="url(#clip-path)">
+    <g id="그룹_2143" data-name="그룹 2143" transform="translate(33.5 -10.05)">
+      <g id="그룹_2142" data-name="그룹 2142" transform="translate(0.5)">
+        <rect id="사각형_2179" data-name="사각형 2179" width="4.726" height="16" transform="translate(139.137 184.803)" fill="#f8c750"/>
+        <rect id="사각형_2180" data-name="사각형 2180" width="4.726" height="4.347" transform="translate(139.137 180.456)" fill="#f8c750"/>
+        <g id="그룹_2098" data-name="그룹 2098" transform="translate(132.849 176.05)">
+          <path id="사각형_2181" data-name="사각형 2181" d="M0,0H4.474A4.177,4.177,0,0,1,8.651,4.177v.576a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(0 0)" fill="#f8c750"/>
+          <path id="사각형_2182" data-name="사각형 2182" d="M0,0H8.651a0,0,0,0,1,0,0V.576A4.177,4.177,0,0,1,4.474,4.753H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(17.302 4.753) rotate(-180)" fill="#f8c750"/>
+        </g>
+      </g>
+      <rect id="사각형_2188" data-name="사각형 2188" width="19" height="16" transform="translate(132.5 184.803)" fill="none" stroke="#38383b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <rect id="사각형_2189" data-name="사각형 2189" width="23" height="4" transform="translate(130.5 180.803)" fill="none" stroke="#38383b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>
