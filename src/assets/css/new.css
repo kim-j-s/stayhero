@@ -200,3 +200,11 @@
 .sh_chkbox.type1 > input:checked + span::after {
     background: #FF724D url(/images/icon_chk_ty1.png) no-repeat center center / 8px auto;
 }
+
+
+
+/* layout */
+.bottom_btn_area {
+    flex: none;
+    padding: 16px;
+}
