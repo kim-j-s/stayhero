@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+/* display */
+.flex_none {
+    flex: none !important;
+}
+
+
 /* header */
 .fix_header  {
     position: fixed;
@@ -148,4 +154,49 @@
 }
 .sh_selectbox {
 
+}
+
+
+/* checkbox */
+.sh_chkbox {
+    position: relative;
+    display: inline-block;
+}
+.sh_chkbox > input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);        
+}
+.sh_chkbox.type1 > input + span {
+    position: relative;
+    display: block;
+    height: auto;
+    padding: 0 20px 0 0;
+    font-size: 12px;
+    line-height: 20px;
+}
+.sh_chkbox.type1 > input + span::before {
+    content: none;
+}
+.sh_chkbox.type1 > input + span::after {
+    content: '';
+    position: absolute;
+    top: 3px !important;
+    right: 0 !important;
+    left: auto !important;
+    width: 14px !important;
+    height: 14px !important;
+    margin: 0 0 0 0 !important;
+    border: 1px solid #707070 !important;
+    border-radius: 4px !important;
+    transform: scale(1) !important;
+    background-color: #fff;
+    transition: background-color 0.2s !important;
+}
+.sh_chkbox.type1 > input:checked + span::after {
+    background: #FF724D url(/images/icon_chk_ty1.png) no-repeat center center / 8px auto;
 }
