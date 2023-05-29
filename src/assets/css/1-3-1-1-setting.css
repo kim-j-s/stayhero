@@ -1,3 +1,76 @@
 @charset "utf-8";
 
 
+.setting-box {
+    padding: 66px 20px 0 20px !important;
+}
+.setting-list ul {
+    
+}
+.setting-list > ul > li {
+    min-height: auto !important;
+    padding: 25px 0 0 0 !important;
+    border-bottom: none !important;
+}
+.setting-list > ul > li > p {
+    font-weight: 700;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #707070;
+}
+
+.setting-box-bottom {
+    padding-top: 18px;
+    font-size: 0;
+    text-align: right;
+}
+.setting-box-bottom > span {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+.setting-box-bottom > span:not(:last-child) {
+    margin-right: 46px;
+}
+.setting-box-bottom > span:not(:last-child):after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -23px;
+    height: 10px;
+    border-left: 1px solid #D4D4D4;
+    transform: translateY(-50%);
+
+}
+.setting-box-bottom > span:not(:last) {
+    background-color: red;    
+}
+.setting-box-bottom > span a {
+    display: block;
+    font-size: 10px;
+    color: #868687;
+}
+
+.setting-list-dept {
+    
+}
+.setting-list-dept li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-bottom: 1px solid #E1E4E6;
+}
+.setting-list-dept li .text {
+    flex: 1 1 0;
+    font-size: 11px;
+    line-height: 16px;
+    color: #575757;
+}
+.setting-list-dept li .text small {
+    display: block;
+    color: #83888B;
+}
+.setting-list-dept .cont {
+    flex: none;
+    padding-left: 20px;
+}
