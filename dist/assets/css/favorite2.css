@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+.div-dummy {
+    height: 55px;
+    background-color: #fff;
+}
+
+body {
+    background-color: #E2E5E5;
+}
+
+.tab {
+    display: flex;
+    padding: 0 20px;
+    border-bottom: 1px solid #E4E4E4;
+    background-color: #fff;
+}
+.tab > a {
+    flex: 1 1 0;
+    position: relative;
+    padding: 20px 0 13px 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #BEBEBE;
+}
+.tab > a.on {
+    color: #393939;
+}
+.tab > a.on:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 4px solid #FF724D;
+}
+
+
+.ceo_list {
+    padding: 5px !important;
+}
+
+.ceo_list li {
+
+}
+
+.ceo_list li + li {
+    margin-top: 5px;    
+}
+
+.ceo_list li > a {
+    display: flex;
+    align-items: center;
+    padding-right: 54px;
+    border-radius: 4px;
+    background: #fff url(../../images/icon_right_ty1.png) no-repeat right 16px center / 22px auto;
+    
+}
+
+.ceo_list li .thumb {
+
+}
+.ceo_list li .thumb .img {
+
+}
+.ceo_list li .thumb .text {
+
+}
+.ceo_list li .cont {
+
+}
+
