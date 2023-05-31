@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #E2E5E5;
+    background-color: #f5f8f8;
 }
 
 .tab {
@@ -42,10 +42,6 @@ body {
     padding: 5px !important;
 }
 
-.ceo_list li {
-
-}
-
 .ceo_list li + li {
     margin-top: 5px;    
 }
@@ -53,22 +49,64 @@ body {
 .ceo_list li > a {
     display: flex;
     align-items: center;
-    padding-right: 54px;
+    padding: 12px 54px 12px 0;
     border-radius: 4px;
     background: #fff url(../../images/icon_right_ty1.png) no-repeat right 16px center / 22px auto;
-    
 }
 
 .ceo_list li .thumb {
-
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
 }
-.ceo_list li .thumb .img {
-
+.ceo_list li .thumb .img .img_state_1 {
+    width: 68px;
+}
+.ceo_list li .thumb .img .img_state_2 {
+    width: 63px;
+}
+.ceo_list li .thumb .img .img_state_3 {
+    width: 63px;
+}
+.ceo_list li .thumb .img .img_state_4 {
+    width: 64px;
+}
+.ceo_list li .thumb .img .img_state_5 {
+    width: 64px;
 }
 .ceo_list li .thumb .text {
-
+    display: block;
+    padding-top: 10px;
+    font-size: 10px;
+    line-height: 1;
+    text-align: center;
+    color: #000;
 }
 .ceo_list li .cont {
 
+}
+.ceo_list li .cont .loc {
+    font-size: 14px;
+    line-height: 16px;
+    color: #000;
+}
+.ceo_list li .cont .text {
+    padding-top: 17px;
+    font-size: 10px;
+    line-height: 1;
+    color: #828282;
+}
+.ceo_list li .cont .text .text2 {
+    padding-top: 5px;
+}
+.ceo_list li .cont .text strong {
+    display: inline-block;
+    vertical-align: baseline;
+    font-weight: 900;
+    font-size: 15px;
+    color: #FF724D;
 }
 
