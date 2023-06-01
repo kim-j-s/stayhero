@@ -16,6 +16,9 @@
     text-decoration: underline;
 }
 
+.mt_17 {
+    margin-top: 17px;
+}
 .mt_20 {
     margin-top: 20px;
 }
@@ -333,6 +336,9 @@
 }
 .sh_scroll_body.type2 {
     padding: 91px 20px 112px 20px;
+}
+.sh_scroll_body.type3 {
+    padding: 55px 0 190px 0;
 }
 
 
