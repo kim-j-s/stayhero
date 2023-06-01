@@ -6,9 +6,34 @@
 }
 
 /* units */
+.fz_0 {
+    font-size: 0;
+}
 .font-weight-black {
     font-weight: 900 !important;
 }
+.underline {
+    text-decoration: underline;
+}
+
+.mt_20 {
+    margin-top: 20px;
+}
+
+
+/* align */
+.ta_l {
+    text-align: left;
+}
+.ta_c {
+    text-align: center;
+}
+.ta_r {
+    text-align: right;
+}
+
+
+
 
 /* header */
 .fix_header  {
@@ -82,13 +107,33 @@
     border-radius: 4px;
 }
 
+.sh_btn.type2 {
+    padding: 8px 0;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #FF724D;
+}
+.sh_btn.type2 span {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 24px;
+    color: #fff;
+}
+.sh_btn.type2.email span {
+    padding-left: 32px;
+    background: url(/images/icon_email.png) no-repeat left center / 22px auto;    
+}
+
 .sh_btn.btn_preivew {
     width: 30px;
     height: 30px;
     background: url(/images/icon_preview.png) no-repeat center center / 30px auto;    
 }
-.sh_btn {
 
+.sh_btn.text {
+    font-size: 12px;
+    line-height: 14px;
+    color: #393939;
 }
 .sh_btn {
 
@@ -100,6 +145,18 @@
 
 }
 .sh_btn {
+
+}
+
+.sh_btn_wrap {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+.sh_btn_wrap * {
+    flex: 1 1 0;
+}
+.sh_btn_wrap * + * {
 
 }
 
@@ -371,3 +428,20 @@
     line-height: 20px;   
     color: #363636;
 }
+
+
+
+
+/* title */
+.border_content_title {
+    padding-bottom: 17px;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #393939;
+    border-bottom: 1px solid #E1E4E6;
+}
+
+
+
+
