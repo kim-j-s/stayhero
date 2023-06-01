@@ -9,6 +9,9 @@
 .fz_0 {
     font-size: 0;
 }
+.font-weight-bold {
+    font-weight: 700 !important;
+}
 .font-weight-black {
     font-weight: 900 !important;
 }
@@ -16,6 +19,9 @@
     text-decoration: underline;
 }
 
+.mt_8 {
+    margin-top: 8px;
+}
 .mt_17 {
     margin-top: 17px;
 }
@@ -125,6 +131,21 @@
 .sh_btn.type2.email span {
     padding-left: 32px;
     background: url(/images/icon_email.png) no-repeat left center / 22px auto;    
+}
+
+
+.sh_btn.type3 {
+    
+}
+.sh_btn.type3 .text {
+    display: block;
+    padding: 0 10px;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 18px;
+    color: #707070;
+    border: 1px solid #FF724D;
+    border-radius: 4px;
 }
 
 .sh_btn.btn_preivew {
@@ -466,6 +487,9 @@
 /* 반복 컨텐츠 */
 .sh_interval_cont {
     
+}
+.sh_interval_cont.t10 > * + * {
+    margin-top: 10px;
 }
 .sh_interval_cont.t35 > * + * {
     margin-top: 35px;
