@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+.div-dummy {
+    height: 55px;
+}
+
+
+.footer-bottom-on {
+    width: auto !important;
+    padding-top: 20px !important;
+    padding: 20px 20px 80px 20px !important;
+    margin: 0 !important;
+}
