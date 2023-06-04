@@ -83,3 +83,40 @@
 .badge-list-wrap {
     
 }
+
+.badge-list-wrap>.badge-item-wrap:not(:last-child) {
+    margin-right: 7px;
+}
+
+.badge-list-wrap > .badge-item-wrap > .badge-wrap {
+    padding: 4px 10px;
+}
+.badge-list-wrap > .badge-item-wrap > .badge-wrap > p {
+    font-size: 10px;
+    line-height: 12px;    
+}
+.shading-wrap {
+    right: -13px;
+    height: 5px;
+    border-top: 5px solid transparent;
+
+}
+.shading-main-wrap {
+    border-left: 3px solid #E5B326;
+}
+.shading-sub-wrap {
+    border-left: 3px solid #26B16C;
+}
+
+.badge-triangle {
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+}
+
+.badge-main-triangle {
+    border-top: 5px solid #FFCD40;
+}
+.badge-sub-triangle {
+    border-top: 5px solid #5CCB94;
+    
+}
