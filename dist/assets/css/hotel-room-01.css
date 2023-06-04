@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+
+.v-divider {
+    margin: 20px 0 15px 0 !important;
+}
+
+.btn-product-road.v-btn.v-btn--outline {
+    width: 63px;
+    height: 20px;
+    background-color: #F8C750 !important;
+    color: #FFFFFF !important;
+    font-weight: 700;
+    font-size: 11px;
+    padding: 0 4px;
+    margin: 0;
+    min-width: 0;
+}
+
+.room-list ul li {
+    margin-bottom: 36px;
+}
+
+.room-wrap-text1 {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    color: #8B8B8B;
+}
+
+.accommodation-sales-type-wrap > div {
+    height: auto;
+}
+.accommodation-sales-type-wrap > div + div {
+    margin-top: 36px;
+}
+.accommodation-sales-type-price-wrap:first-child {
+    height: auto;
+}
+
+.accommodation-sales-type-price-wrap > .fixed-price {
+    font-size: 10px;
+    line-height: 12px;
+}
+.accommodation-sales-type-price-wrap > .sell-price {
+    font-size: 10px;
+    line-height: 12px;    
+}
+.accommodation-sales-type-price-wrap > .result-price {
+    font-weight: normal;
+    font-size: 18px;
+}
+.accommodation-sales-type-price-wrap > p > .discount-rate {
+    font-weight: normal;
+    font-size: 10px;
+}
+
+
+
+
+@media screen and (min-width: 301px) {
+    .room-wrap {
+        align-items: flex-start;
+        height: auto;
+    }
+    .room-main-image-wrap {
+        width: 105px;
+        height: auto;
+        margin-top: 5px;
+    }
+    .accommodation-sales-type-wrap {
+        width: calc(100% - 105px);
+        padding-left: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* 쿠폰 */
+.coupon-wrap-cont {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.coupon-wrap-cont.plus .coupon-wrap:nth-child(2) {
+    position: relative;    
+}
+.coupon-wrap-cont.plus .coupon-wrap:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 13px;
+    height: 13px;
+    background: url(/images/icon_plus.png) no-repeat center center / 13px auto;
+    transform: translateX(-50%);
+}
+.coupon-wrap:not(:last-child) {
+    margin-bottom: 4px;
+}
+.coupon-wrap {
+    height: 20px;
+    border-radius: 3px;
+}
+.affiliate-coupon.ty1 {
+    border: 1px solid #FFCD40;
+    border-left: 5px solid #FFCD40;
+}
+.affiliate-coupon.ty1 > .coupon-name {
+    border-right: 1px dashed #FFCD40;
+}
+.affiliate-coupon.ty2 {
+    border-left: 1px solid #44BE83;
+    border-left: 5px solid #44BE83;
+}
+.affiliate-coupon.ty2 > .coupon-name {
+    border-right: 1px dashed #44BE83;
+}
+.coupon-wrap > .coupon-name {
+    font-size: 10px;
+}
+.coupon-wrap > .coupon-discount-price {
+    width: 60%;
+    padding-right: 5px;
+    font-size: 10px;
+}

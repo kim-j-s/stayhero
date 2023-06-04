@@ -136,7 +136,6 @@
 
 
 /* 쿠폰 */
-
 .coupon-wrap-cont {
     position: relative;
     display: flex;
@@ -155,17 +154,14 @@
     height: 13px;
     background: url(/images/icon_plus.png) no-repeat center center / 13px auto;
     transform: translateX(-50%);
-
 }
-
 .coupon-wrap:not(:last-child) {
     margin-bottom: 4px;
 }
-
 .coupon-wrap {
     height: 20px;
+    border-radius: 3px;
 }
-
 .affiliate-coupon.ty1 {
     border: 1px solid #FFCD40;
     border-left: 5px solid #FFCD40;
