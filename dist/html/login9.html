@@ -41,7 +41,7 @@
     <link rel="stylesheet" type="text/css" href="../../assets/css/new.css">
 
 
-    <link rel="stylesheet" type="text/css" href="../../assets/css/1-3-1-2_002.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/login9.css">
 
 
 </head>
@@ -54,6 +54,19 @@
             <div id="main-container" class="iphone-x-container">
                 <!---->
                 <!---->
+                <div class="modal-mask">
+                    <div class="modal-wrapper">
+                        <div class="modal-container flex-align-center">
+                            <div class="w100">
+                                <div class="popup_text4">
+                                    <div>
+                                        인증에 <strong>성공</strong>하였습니다.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!---->
                 <!---->
                 <!---->
@@ -63,27 +76,42 @@
                     <div class="container_s">
                         <!---->
                         <div class="fix_header">
-                            <p class="fix_header_title">회원탈퇴</p>
+                            <button type="button" class="fix_header_hback">
+                                <img src="/images/icon_left_ty1.png" alt="">
+                            </button>
+                            <p class="fix_header_title">회원가입</p>
                         </div>
                         <!---->
 
-                        <div class="sh_scroll_body type2">
-                            <div class="comp_msg">
-                                <p class="comp_msg_title">회원탈퇴가 완료되었습니다.</p>
-                                <p class="desc">
-                                    그 동안 스테이히어로를 이용해주셔서 감사합니다.<br>
-                                    더 나은 서비스로 다시 찾아 뵙겠습니다.
-                                </p>
+                        <div class="sh_scroll_body type1">
+                            <div class="inner_content">
+                                <div class="border_content_title">이메일 인증</div>
+
+                                <div class="inp_group">
+                                    <div class="sh_interval_cont t10">
+                                        <div>
+                                            <div class="sh_input type2 btnadd_type1">
+                                                <input type="text" name="" id="" class="inp" placeholder="stayhero@stayhori.co.kr">
+                                                <button type="button" class="sh_btn type1"><span class="text">중복 확인</span></button>
+                                            </div>
+                                            <p class="i_text">사용할 이메일을 입력해주세요.</p>
+                                        </div>
+                                        <div>
+                                            <div class="sh_input type2 btnadd_type1">
+                                                <input type="text" name="" id="" class="inp" placeholder="0000">
+                                                <button type="button" class="sh_btn type3"><span class="text">인증하기</span></button>
+                                            </div>
+                                            <p class="i_text">이메일로 발송된 인증번호를 입력해주세요.</p>
+                                        </div>
+                                    </div>
+                                    <div class="fz_0 ta_r mt_20">
+                                        <a href="" class="sh_btn text font-weight-bold underline">인증번호 재전송</a>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
-                    </div>
 
-                    <div class="div-btn-ok">
-                        <button type="button" class="ma-0 pa-0 btn-ok bg-darkgray-2 radius_4 v-btn v-btn--flat theme--light">
-                            <div class="v-btn__content">
-                                <p class="fs15 text-white">홈으로 돌아가기</p>
-                            </div>
-                        </button>
                     </div>
                 </div>
             </div>

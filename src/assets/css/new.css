@@ -50,6 +50,7 @@
     z-index: 2;
     display: flex;
     width: 100%;
+    min-height: 52px;
     justify-content: space-between;
     padding: 4px 0;
     background-color: #fff;
@@ -222,6 +223,19 @@
     position: absolute;
     top: 50%;
     right: 0;
+    transform: translateY(-50%);
+}
+
+.sh_input.remain .inp {
+    padding-right: 60px;
+}
+.sh_input.remain .time {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FF724D;
     transform: translateY(-50%);
 }
 .sh_input.btnadd {
@@ -564,6 +578,7 @@
     align-items: center;
     justify-content: center;
     min-height: 124px;
+    padding: 0 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;   
@@ -573,7 +588,28 @@
 .popup_text4 strong {
     color: #FF724D;
 }
-
+.popup_text5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 124px;
+    padding: 0 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;   
+    color: #4D5256;
+    text-align: center;
+}
+.popup_text5 .tit {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 18px;
+}
+.popup_text5 .desc {
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 18px;
+}
 
 
 /* title */
