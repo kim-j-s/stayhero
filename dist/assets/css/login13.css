@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+
+/* 메뉴 */
+.iwm {
+    margin: 0 20px;
+    padding-top: 36px;
+}
+.iwm {
+
+}
+
+.iwm_title {
+    padding-bottom: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #393939;
+    border-bottom: 1px solid #E1E4E6;
+}
+
+.iwm_desc {
+    padding-top: 8px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #393939;
+}
+
+.iwm_cont + .iwm_cont {
+    margin-top: 36px;
+}
+

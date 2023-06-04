@@ -41,7 +41,7 @@
     <link rel="stylesheet" type="text/css" href="../../assets/css/new.css">
 
 
-    <link rel="stylesheet" type="text/css" href="../../assets/css/1-3-1-1_001.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/login17.css">
 
 
 </head>
@@ -54,6 +54,22 @@
             <div id="main-container" class="iphone-x-container">
                 <!---->
                 <!---->
+                <div class="modal-mask">
+                    <div class="modal-wrapper">
+                        <div class="modal-container flex-align-center">
+                            <div class="w100">
+                                <div class="sh_modal_cont">
+                                    <div class="cont">
+                                        <div class="inner">
+                                            인증에 <strong class="color1">실패</strong>하였습니다.<br>
+                                            다시 시도해주세요.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!---->
                 <!---->
                 <!---->
@@ -66,28 +82,37 @@
                             <button type="button" class="fix_header_hback">
                                 <img src="/images/icon_left_ty1.png" alt="">
                             </button>
-                            <p class="fix_header_title">닉네임 변경</p>
+                            <p class="fix_header_title">비밀번호 찾기</p>
                         </div>
                         <!---->
 
                         <div class="sh_scroll_body type1">
-                            <div class="inp_group">
-                                <div class="sh_interval_cont t48">
-                                    <div class="sh_input type2 btnadd_type1">
-                                        <input type="text" name="" id="" class="inp" placeholder="닉네임">
-                                        <button type="button" class="sh_btn type1"><span class="text">중복 확인</span></button>
+
+
+                            <div class="iwm">
+                                <div class="iwm_cont">
+                                    <div class="iwm_title">휴대폰 인증</div>
+                                    <p class="iwm_desc">본인 명의의 휴대폰 번호로 인증합니다.</p>
+                                    <div class="sh_input type2 remain b2">
+                                        <input type="text" name="" id="" class="inp" placeholder="010-1234-5678" value="0000">
+                                        <span class="time">03:00</span>
+                                    </div>
+                                    <div class="fz_0 ta_r mt_8">
+                                        <a href="" class="sh_btn text font-weight-bold underline">인증번호 재전송</a>
+                                    </div>
+                                </div>
+
+                                <div class="iwm_cont">
+                                    <div class="iwm_title">이메일 인증</div>
+                                    <p class="iwm_desc">회원가입 시 등록한 이메일 주소로 인증합니다.</p>
+                                    <div class="sh_input type2 btnadd_type1 b2">
+                                        <input type="text" name="" id="" class="inp" placeholder="stayhero@stayhori.co.kr">
+                                        <button type="button" class="sh_btn type3"><span class="text">인증하기</span></button>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                    </div>
-                    <div class="div-btn-ok">
-                        <button type="button" class="ma-0 pa-0 btn-ok bg-darkgray-2 radius_4 v-btn v-btn--flat theme--light">
-                            <div class="v-btn__content">
-                                <p class="fs15 text-white">확인</p>
-                            </div>
-                        </button>
                     </div>
                 </div>
             </div>

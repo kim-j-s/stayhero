@@ -1,23 +1,34 @@
 @charset "utf-8";
 
 
-.inner_content {
-    padding: 36px 20px 0 20px;
+/* 메뉴 */
+.iwm {
+    margin: 0 20px;
+    padding-top: 36px;
+}
+.iwm {
+
 }
 
-.inp_group {
-    padding-top: 10px;
+.iwm_title {
+    padding-bottom: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #393939;
+    border-bottom: 1px solid #E1E4E6;
 }
 
-.i_text {
+.iwm_desc {
     padding-top: 8px;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 18px;
+    color: #393939;
 }
 
-
-
-
+.iwm_cont + .iwm_cont {
+    margin-top: 36px;
+}
 
 
 .modal-mask {
