@@ -48,10 +48,21 @@ body {
     flex: 1 1 0;
     display: flex;
     align-items: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
     padding-left: 10px;
 }
-.room_list .room_list_top .room_list_top_right a + a {
-    margin-left: 20px;
+.room_list .room_list_top .room_list_top_right a {
+    flex: none;
+}
+.room_list .room_list_top .room_list_top_right a:not(:last-child) {
+    margin-right: 20px;
+}
+.room_list .room_list_top .room_list_top_right .update {
+    margin-right: 6px;
+    font-size: 10px;
+    line-height: 16px;
+    color: #868686;
 }
 
 
@@ -170,7 +181,6 @@ body {
     border-radius: 10px;
     border: 1px solid #FF724D;
 }
-
 .f_btnbox_item > span {
     display: block;
     padding: 0 9px;
@@ -178,6 +188,21 @@ body {
     line-height: 18px;
     color: #9D9D9D;
 }
+.f_btnbox_item.ty2 {
+    border: 1px solid #FF724D;
+    background-color: #FF724D;
+}
+.f_btnbox_item.ty2 > span {
+    color: #fff;    
+}
 
+
+.f_btnbox.ty2 {
+    justify-content: center;
+    gap: 5px 44px;
+}
+.f_btnbox.ty2 .f_btnbox_item {
+    width: 120px;
+}
 
 
