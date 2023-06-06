@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+
+.detail_wrap {
+
+}
+
+.detail_wrap_inner {
+    
+}
+
+.detail_wrap_inner + .detail_wrap_inner {
+    margin-top: 50px;
+}
+
+.detail_wrap_inner .title {
+    padding-bottom: 6px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #393939;
+    border-bottom: 1px solid #E1E4E6;
+}
+
+.detail_info_link {
+    display: block;
+    padding: 14px 36px 14px 0;
+    background: url(/images/icon_right_ty1.png) no-repeat right center / 22px auto;
+}
+.detail_info_link .name {
+    padding-bottom: 6px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000;
+}
+.detail_info_link .opts {
+    padding-bottom: 8px;
+    font-size: 0;
+}
+.detail_info_link .opts > span {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    color: #B99051;
+}
+.detail_info_link .opts > span:not(:last-child) {
+    margin-right: 11px;
+}
+.detail_info_link .opts > span:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -6px;
+    height: 10px;
+    border-left: 1px solid #B9B9B9;
+    transform: translateY(-50%);
+}
+.detail_info_link .addr {
+    font-size: 10px;
+    line-height: 12px;
+    color: #83888B;
+}
+
+
+.detail_inout {
+    display: flex;
+    gap: 4px;
+    align-items: stretch;
+}
+.detail_inout .tit {
+    display: block;
+    padding-bottom: 7px;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #868687;
+}
+.detail_inout .date {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #212121;
+    overflow-wrap: anywhere;
+}
+.detail_inout .in {
+    flex: 1 1 0;
+    padding: 14px 12px 16px 12px;
+    background-color: #F6F6F6;
+    
+}
+.detail_inout .day {
+    flex: none;
+    display: inline-flex;
+    width: 90px;
+    align-items: center;
+    justify-content: center;
+    background-color: #EDEDED;
+}
+.detail_inout .day strong {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    color: #FF724D;
+}
+.detail_inout .out {
+    flex: 1 1 0;
+    padding: 14px 12px 16px 12px;
+    background-color: #F6F6F6;
+}
+
+
+
+
+.detail_info_wrap .f_btnbox {
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
