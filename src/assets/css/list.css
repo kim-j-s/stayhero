@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+.div-dummy {
+    height: 55px;
+    background-color: #fff;
+}
+
+body {
+    background-color: #f5f8f8;
+}
+
+
+
+
+.room_list_wrap {
+    padding: 5px;
+}
+.room_list > li {
+    position: relative;
+    padding: 16px 16px 20px 16px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.room_list > li > .room_close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 18px;
+    height: 18px;
+    background: url(/images/icon_room_close.png) no-repeat center center / 18px auto;
+}
+.room_list > li + li {
+    margin-top: 5px;    
+}
+
+
+.room_list .room_list_top {
+    display: flex;
+    align-items: center;
+    padding-right: 24px;
+    padding-bottom: 14px;
+}
+.room_list .room_list_top .badge {
+    flex: none;
+    width: 80px;
+}
+.room_list .room_list_top .room_list_top_right {
+    flex: 1 1 0;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+.room_list .room_list_top .room_list_top_right a + a {
+    margin-left: 20px;
+}
+
+
+.room_list .room_list_cont {
+    display: flex;
+    align-items: center;
+}
+.room_list .room_list_cont .thumb {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    font-size: 0;
+    line-height: 1;
+}
+.room_list .room_list_cont .thumb img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.room_list .room_list_cont .cont {
+    flex: 1 1 0;
+    padding-left: 10px;
+}
+
+.room_list .room_list_cont .cont .name {
+    padding-bottom: 6px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000;
+}
+.room_list .room_list_cont .cont .opts {
+    padding-bottom: 8px;
+    font-size: 0;
+}
+.room_list .room_list_cont .cont .opts > span {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    color: #B99051;
+}
+.room_list .room_list_cont .cont .opts > span:not(:last-child) {
+    margin-right: 11px;
+}
+.room_list .room_list_cont .cont .opts > span:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -6px;
+    height: 10px;
+    border-left: 1px solid #B9B9B9;
+    transform: translateY(-50%);
+}
+.room_list .room_list_cont .cont .inout {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.room_list .room_list_cont .cont .inout > .inner {
+    width: calc(50% - 2px);
+    padding: 7px;
+    background-color: #F6F6F6;
+}
+.room_list .room_list_cont .cont .inout > .inner .tit {
+    padding-bottom: 5px;    
+    font-size: 10px;
+    line-height: 12px;
+    color: #868687;
+}
+.room_list .room_list_cont .cont .inout > .inner .date {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #212121;
+}
+
+.room_list li .f_btnbox {
+    padding-top: 22px;
+}
+
+
+/* 목록없음 */
+.room_list_none {
+    margin: 150px 0 50px 0;
+    padding-top: 66px;
+    text-align: center;
+    background: url(/images/icon_list_none.png) no-repeat top center / 58px auto;
+}
+.room_list_none .tit {
+    display: block;
+    font-size: 16px;
+    line-height: 18px;
+    color: #212121;
+}
+.room_list_none .desc {
+    padding-top: 8px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #83888B;
+
+}
+
+
+.f_btnbox {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    gap: 5px;
+}
+.f_btnbox_item {
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 10px;
+    border: 1px solid #FF724D;
+}
+
+.f_btnbox_item > span {
+    display: block;
+    padding: 0 9px;
+    font-size: 11px;
+    line-height: 18px;
+    color: #9D9D9D;
+}
+
+
+
