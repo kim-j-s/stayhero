@@ -1,21 +1,265 @@
 @charset "utf-8";
 
+.login_logo {
+    margin: 45px 0 76px 0;
+    font-size: 0;
+    text-align: center;
+}
+.login_logo img {
+    width: 224px;    
+}
+
+.login_wrap {
+    padding: 0 20px;
+}
+
+
+/* content */
+
+.inp_group {
+    padding: 50px 20px 0 20px;
+}
 
 .inner_content {
     padding: 36px 20px 0 20px;
 }
 
-.inp_group {
-    padding-top: 10px;
+
+
+/* 동의 */
+.agree_top {
+    margin-top: 14px;
 }
 
-.i_text {
+.agree_list {
+    padding-top: 24px;    
+}
+.agree_list li {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.agree_list li + li {
+    margin-top: 24px;
+}
+
+.agree_list li a {
+    flex: 1 1 0;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #575757;
+}
+.agree_list li a .text {
+    text-decoration: underline;
+}
+.agree_list li a .ty1 {
+    color: #FF724D;
+    text-decoration: underline;
+}
+.agree_list li a .ty2 {
+    color: #9D9D9D;
+    text-decoration: underline;
+}
+.agree_list li .chk {
+    flex: none;
+    padding: 0 20px;
+    font-size: 0;
+}
+
+
+/* 메뉴 */
+.iwf {
+    margin: 0 20px;
+    padding-top: 36px;
+}
+
+.iwf_title {
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #393939;
+    border-bottom: 1px solid #707070;
+}
+
+.iwf_cont + .iwf_cont {
+    margin-top: 60px;
+}
+
+
+/* 메뉴 */
+.iwm {
+    margin: 0 20px;
+    padding-top: 36px;
+}
+.iwm {
+
+}
+
+.iwm_title {
+    padding-bottom: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #393939;
+    border-bottom: 1px solid #E1E4E6;
+}
+
+.iwm_desc {
     padding-top: 8px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #393939;
+}
+
+.iwm_cont + .iwm_cont {
+    margin-top: 36px;
+}
+
+.sh_btn_wrap {
+    margin-top: 110px;
+}
+
+
+
+/* 기본정보 */
+.sh_binfo {
+    padding-top: 8px;
+}
+.sh_binfo .text {
+    font-size: 11px;
+    line-height: 12px;
+    color: #83888B;    
+}
+.sh_binfo .inner .label_text {
+    font-size: 16px;
+    line-height: 20px;
+    color: #83888B;
+}
+.sh_binfo .inner .label_text.full {
+    display: block;
+    padding-top: 20px;
+}
+.sh_binfo .inner .sh_binfo_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #E1E4E6;
+}
+.sh_binfo .inner .sh_binfo_flex .ltext {
+    flex: none;
+    width: 62px;
+}
+.sh_binfo .inner .sh_binfo_flex .cont {
+    flex: 1 1 0;
+}
+.sh_binfo .inner .sh_binfo_flex .cont.stype {
+    display: flex;
+    gap: 7px;
+}
+.sh_binfo .inner .sh_binfo_flex .cont.stype .sh_selectbox {
+    flex: 1;        
+}
+.sh_binfo .inner .sh_binfo_flex .cont.ctype {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0 40px;
+}
+.sh_binfo .btn_area {
+    padding-top: 18px;
+    text-align: right;
+}
+
+
+/* 완료페이지 */
+.bdb_title {
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    border-bottom: 1px solid #707070;
+}
+
+.chklist {
+    
+}
+.chklist li {
+    padding: 15px 0;    
+    border-bottom: 1px solid #E1E4E6;
+}
+
+
+.chklist.type2 li {
+    padding: 0;
+    border-bottom: none;
+}
+.chklist.type2 li + li {
+    margin-top: 60px;
+}
+
+
+.comp_msg {
+    padding: 116px 20px 20px 20px;
+    text-align: center;
+}
+.comp_msg .comp_msg_title {
+    font-weight: 900;
+    font-size: 17px;
+    line-height: 1.2;
+}
+.comp_msg .desc {
+    margin-top: 35px;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+
+/* bottom */
+
+.fixed_bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 20px 40px 20px;
+    background-color: #fff;
+}
+.fixed_bottom .sub {
+    padding-top: 28px;
+    text-align: center;
+}
+.fixed_bottom .sub p {
+    padding-bottom: 10px;
     font-size: 12px;
     line-height: 14px;
 }
+.fixed_bottom .sub a {
+    display: inline-block;
+    font-size: 700px;
+    font-size: 12px;
+    line-height: 24px;
+    color: #FF724D;
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* modal */
 .modal-mask {
     position: fixed;
     z-index: 9998;
