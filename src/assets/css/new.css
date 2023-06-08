@@ -80,7 +80,7 @@
 .fix_header  {
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 5;
     display: flex;
     width: 100%;
     min-height: 52px;

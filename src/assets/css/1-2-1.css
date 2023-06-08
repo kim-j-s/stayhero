@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+
+.div-calendar-content-wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 72px 0 110px 0;
+}
+
+.calendar_reservation {
+    position: relative;
+    z-index: 1;
+    flex: none;
+    margin: 0 20px;
+    padding-bottom: 19px;
+}
+.calendar_reservation::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #E4E4E4;
+}
+
+
+.div-calendar-content {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: auto;
+}
+.div-calendar-content > div {
+    padding: 0 20px !important;
+    border: none;
+}
+
+.div-calendar-content .vc-pane {
+    padding: 17px 0 16px 0;
+    border-top: 1px solid #E4E4E4;
+}
+.div-calendar-content .vc-pane .vc-header {
+    padding: 0;
+    
+}
+.div-calendar-content .vc-pane .vc-header .vc-title {
+    font-size: 11px !important;
+    line-height: 14px;    
+}
+
+.div-calendar-content .vc-pane {
+
+}
+.div-calendar-content .vc-pane {
+
+}
+.div-calendar-content .vc-pane .vc-bg-yellow-200 {
+    background-color: #fff;
+}
+.div-calendar-content .vc-pane .vc-bg-yellow-600 {
+    background-color: #FF724D !important;
+}
+.calendar .selected-color {
+    color: #fff;
+}
+
+
+
