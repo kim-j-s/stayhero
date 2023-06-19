@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+.splash {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+
+/* type1 */
+.splash.splash_type1 {
+    background: url(/images/splash/splash_1.png) no-repeat center bottom / 274px auto;    
+}
+.splash.splash_type1 .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 37%;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 50px;
+    text-align: center;
+    color: #E94709FA;
+}
+
+/* type2 */
+.splash.splash_type2 {
+    background: #E94709 url(/images/splash/splash_2.png) no-repeat center bottom / 274px auto;    
+}
+.splash.splash_type2 .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 37%;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+}
+.splash.splash_type2 .text strong {
+    font-weight: 700;
+}
+    
+/* type3 */
+.splash.splash_type3 {
+    background: url(/images/splash/splash_3.png) no-repeat center bottom / 274px auto;
+}
+.splash.splash_type3 .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 49%;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 50px;
+    text-align: center;
+    color: #E94709;
+}
+.splash.splash_type3 .text p {
+    padding-top: 72px;
+    background: url(/images/splash/splash_logo_1.png) no-repeat center top / 93px auto;
+}
+
+/* type4 */
+.splash.splash_type4 {
+    background-color: #E94709;
+    background-image: url(/images/splash/splash_3.png), url(/images/splash/splash_3_2.png);
+    background-position: center bottom, center bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 274px auto, 100% auto;
+}
+.splash.splash_type4 .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 49%;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+}
+.splash.splash_type4 .text p {
+    padding-top: 72px;
+    background: url(/images/splash/splash_logo_2.png) no-repeat center top / 93px auto;
+}
+
+
+/* type5 */
+.splash.splash_type5 {
+    background: url(/images/splash/splash_5.png) no-repeat center bottom / cover;
+}
+.splash.splash_type5 .text {
+    padding: 32px 20px 0 20px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    color: #fff;
+}
+
+/* type6 */
+.splash.splash_type6 {
+    background: url(/images/splash/splash_6.png) no-repeat center bottom / cover;
+}
+.splash.splash_type6 .text {
+    padding: 32px 20px 0 20px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    color: #E94709;
+}
+
+/* type7 */
+.splash.splash_type7 {
+    background: url(/images/splash/splash_7.png) no-repeat center bottom / cover;
+}
+.splash.splash_type7 .text {
+    padding: 30px 10px 0 10px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    color: #E94709;
+    text-align: center;
+}
+.splash.splash_type7 .text p {
+    padding-top: 72px;
+    background: url(/images/splash/splash_logo_1.png) no-repeat center top / 100px auto;
+}
+
+/* type8 */
+.splash.splash_type8 {
+    background: url(/images/splash/splash_8.png) no-repeat center bottom / cover;
+}
+.splash.splash_type8 .text {
+    padding: 75px 10px 0 10px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+}
+.splash.splash_type8 .text strong {
+    display: block;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1;
+}
